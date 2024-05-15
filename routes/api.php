@@ -1,5 +1,9 @@
 <?php
 
+use App\Http\Controllers\ImagesController;
+use App\Http\Controllers\NotesController;
+use App\Http\Controllers\ProfilesController;
+use App\Http\Controllers\RubriqueController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -17,3 +21,11 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::resource('notes', NotesController::class);
+Route::resource('rubriques', RubriqueController::class);
+Route::resource('images', ImagesController::class);
+Route::resource('profiles', ProfilesController::class);
+
+
+
