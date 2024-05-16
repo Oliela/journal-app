@@ -30,5 +30,10 @@ class Notes extends Model
         return $this->belongsTo(Rubriques::class);
     }
 
+    
+
+
+
+
    
 }

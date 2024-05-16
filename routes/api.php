@@ -27,5 +27,3 @@ Route::resource('rubriques', RubriqueController::class);
 Route::resource('images', ImagesController::class);
 Route::resource('profiles', ProfilesController::class);
 
-
-

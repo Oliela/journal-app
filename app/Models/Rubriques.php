@@ -16,8 +16,6 @@ class Rubriques extends Model
     protected $fillable = [
         'designation',
         'description', 
-        'icone',
-        'date'
     ];
 
     public function notes()

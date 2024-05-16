@@ -12,7 +12,7 @@ class NotesController extends Controller
      */
     public function index()
     {
-        $data = Notes::with('images','rubriques')->get();
+        $data = Notes::with('rubriques')->get();
         return response()->json(['success'=>true, 'data'=> $data]);
     }
 
@@ -39,7 +39,7 @@ class NotesController extends Controller
      */
     public function show($id)
     {
-        $data = Notes::with('images','rubriques')->findOrFail($id);
+        $data = Notes::with('rubriques')->findOrFail($id);
         return response()->json(['success'=>true, 'data'=> $data]);
     }
 

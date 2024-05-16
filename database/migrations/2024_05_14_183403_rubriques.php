@@ -15,8 +15,6 @@ return new class extends Migration
             $table->id();
             $table->string('designation');
             $table->string('description');
-            $table->string('icone');
-            $table->dateTime('date');
             $table->timestamps();
         });
     }
